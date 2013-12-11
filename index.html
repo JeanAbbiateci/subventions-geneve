@@ -1,0 +1,255 @@
+
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="fr">
+<!--<![endif]-->
+
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Où vont les subventions de la ville de Genève ?</title>
+    <link rel="icon" type="image/png" href="img/Text%20Bubble.png" />
+    <meta name="description" content="">
+     <script type="text/javascript">
+    WebFontConfig = {
+        google: {
+            families: ['Droid+Sans:400,700:latin']
+        }
+    };
+    (function() {
+        var wf = document.createElement('script');
+        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+            '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+    })();
+    </script>
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/libs/modernizr-2.0.6.min.js"></script>
+<meta property="og:title" content="Où vont les subventions de la ville de Genève ? "/>
+    <meta property="og:url" content="http://www.jeanabbiateci.fr/geneve" />
+    
+    <meta property="og:description" content="Une visualisation des 203 millions de francs suisses de subventions versés par la ville de Génève" />
+    <meta property="og:image" content="img/screenshoot.png" />
+ 
+
+
+  <script type="text/javascript">
+    var switchTo5x = true;
+    </script>
+    <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+    <script type="text/javascript">
+    stLight.options({
+        publisher: "81373e1c-4788-47d5-b647-2b5fdf232b3e",
+        doNotHash: false,
+        doNotCopy: false,
+        hashAddressBar: false
+    });
+    </script>
+</head>
+
+<body>
+
+    <div id="container" class="container">
+         <table style: "z-index:-30000; " border="0">
+
+            <tr><br>
+                <td width="80% ">
+                    <h2>Où vont les subventions de la ville de Genève ?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2>
+                    Un projet de <a href="http://www.jeanabbiateci.fr " target="_blank ">Jean Abbiateci</a>
+                </td>
+                <td width="30% " style="margin-left:100px; ">
+                    <span class='st_twitter_large' displayText='Tweet'></span>
+                    <span class='st_facebook_large' displayText='Facebook'></span>
+                    <span class='st_email_large' displayText='Email'></span>
+
+                </td>
+            </tr>
+        </table>
+     
+        <hr>
+
+        <div id="chart-frame">
+            <div id="chart-main">
+                <div id="chart-nav" class="btn-group">
+                    <a href="#" id="all" class="btn active">Toutes les subventions</a>
+                    <a href="#" id="dc_vs_nation" class="btn">Trier par domaine</a>
+              
+                  <a href="#" id="rent_vs_remaining" class="btn">Cherchez un bénéficiaire</a>
+                    <!-- <a href="#" id="state" class="btn">State by State</a> -->
+                </div>
+                <div id="chart-overlays">
+                    <div class="chart-overlay" id="chart-all-overlay" style="display:block;">
+                        <div class="chart-annotation chart-all-overlay-annotation">
+                            <h5>203 millions de francs</h5>
+                            <p>Toutes les subventions de la ville de Genève prévues au budget 2014 sont visualisées ici. Les prestations en nature ne sont pas prises en compte.
+                                <hr>
+                            </p>
+
+
+                        </div>
+                        <div id="chart-high-label">
+                            <span>En hausse depuis 2012</span>
+                        </div>
+                        <div id="chart-low-label">
+                            <span>En baisse depuis 2012</span>
+                        </div>
+                        <div class="chart-key">
+                            <p>La surface de chaque bulle est proportionnelle au montant des subventions.</p>
+
+                            <div id="chart-key-size">
+                                <div class="circle-label" id="circle-label-one">
+                                    <span style="left:55px">10 millions de CHF</span>
+                                </div>
+
+                                <div class="circle-label" id="circle-label-three">
+                                    <span style="left:55px">1 million de CHF</span>
+                                </div>
+                                <svg id="chart-key-svg"></svg>
+                            </div>
+                          
+                            <div>
+                                <table>
+    <tr>
+    <td style="background-color: #abd9e9; width: 40px;height: 20px;border: 5px solid #fff;"></td>
+    <td style="vertical-align:middle;color:#555">&nbsp;&nbsp;en hausse depuis 2012</td>
+ 
+   
+   
+     <tr>
+    <td style="background-color: #fdae61; width: 40px;height: 20px;border: 5px solid #fff;"></td>
+    <td style="vertical-align:middle;color:#555">&nbsp;&nbsp;stable depuis 2012
+   <tr>
+    <td style="background-color: #d7191c; width: 40px;height: 20px;border: 5px solid #fff;"></td>
+    <td style="vertical-align:middle;color:#555">&nbsp;&nbsp;en baisse depuis 2012</td>
+  </tr>
+
+
+    
+    </table><br>
+                 
+<small>
+                                    <p style="margin-bottom: 8px;margin-top: 15px;color: #555;font-size:12px;line-height: 1.45;">
+
+
+                                        Les données sont extraites du budget 2014 de la ville de Genève.
+                                        <br>
+                                        <br><a href="http://www.ville-geneve.ch/fileadmin/public/Departement_1/Publications/projet-budget-2014.pdf " target="_blank">Le fichier PDF</a> | <a href="https://docs.google.com/spreadsheet/ccc?key=0AvW9Q_v2XAGTdDdXclNrc2NmekdjSG5fNkpmWUFDN0E&usp=drive_web#gid=0 " target="_blank ">Les données CSV </a>| <a href="mailto:j.abbiateci@gmail.com">Signalez une erreur</a>
+                                        <br><br>Avec le code de <a href="http://vallandingham.me/bubble_charts_in_d3.html " target="_blank">Jim Vallandingham</a>,<a href="http://projects.chrislkeller.com/demos/datafeed_to_datatables/ " target="_blank"> Chris Essig et Chris Keller</a> 
+                                        <p>
+                                </small>
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    
+                    <div class="chart-overlay" id="chart-dc-vs-nation-overlay">
+                        <div class="chart-annotation chart-dc-overlay-annotation">
+                            <h5>Cohésion sociale et solidarité
+                            </h5>
+
+                        </div>
+                        <div class="chart-annotation chart-nation-overlay-annotation">
+                            <h5>Culture et Sport</h5>
+
+                        </div>
+                        <div class="chart-annotation chart-nation-overlay-annotation1">
+                            <h5>Construction et aménagement</h5>
+
+                        </div>
+                        <div class="chart-annotation chart-nation-overlay-annotation2">
+                            <h5>Finances et logements</h5>
+
+                        </div>
+                        <div class="chart-annotation chart-nation-overlay-annotation3">
+                            <h5>Environnement urbain et sécurité</h5>
+
+                        </div>
+                        <div class="chart-annotation chart-nation-overlay-annotation4">
+                            <h5>Autorités</h5>
+
+                        </div>
+                    </div>
+                    <div class="chart-overlay" id="chart-rent-vs-remaining-overlay">
+                        <div class="chart-annotation chart-rent-overlay-annotation">
+                            <iframe src="table/index.html" height="1300" width="970" frameborder="0" scrolling="no">
+                            </iframe>
+                        </div>
+
+                    </div>
+                    <div class="chart-overlay" id="chart-state-overlay">
+                    </div>
+                </div>
+                <div id="chart-canvas"></div>
+            </div>
+            <div id="chart-footer">
+                
+            
+            </div>
+        </div>
+    </div>
+    <!--! end of #container -->
+
+)
+    <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script> -->
+    <script>
+    window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')
+    </script>
+
+    <script defer src="js/plugins.js"></script>
+    <script defer src="js/script.js"></script>
+    <script src="js/CustomTooltip.js"></script>
+    <script src="js/libs/coffee-script.js"></script>
+    <script src="js/libs/d3.min.js"></script>
+    <script src="js/libs/d3.csv.min.js"></script>
+    <script src="js/libs/d3.layout.min.js"></script>
+    <script src="js/libs/d3.geom.min.js"></script>
+    <script type="text/coffeescript" src="coffee/vis.coffee"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $(document).ready(function() {
+            $('#chart-nav a').click(function() {
+                var view_type = $(this).attr('id');
+                $('#chart-nav a').removeClass('active');
+                $(this).toggleClass('active');
+                toggle_view(view_type);
+                return false;
+            });
+        });
+    });
+    </script>
+
+
+<script type="text/javascript ">
+var gaJsHost = (("https: " == document.location.protocol) ? "https://ssl. " : "http://www. ");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript' %3E%3C/script%3E "));
+</script>
+<script type="text/javascript ">
+try {
+var pageTracker = _gat._getTracker("UA-36709636-1 ");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+    <img src="img/screenshoot.png " style="display:none " />
+
+
+
+    <!--[if lt IE 7 ]>
+<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+<script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+<![endif]-->
+
+</body>
+
+</html>

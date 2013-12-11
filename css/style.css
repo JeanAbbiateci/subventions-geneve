@@ -1,0 +1,343 @@
+body {
+  font-family: 'Droid Sans', sans-serif;
+}
+a, a:visited, a:active {
+  color: #444;
+}
+
+#chart-frame {
+  width: 970px;
+  height: 700px;
+}
+
+#chart-main {
+  position: relative;
+  width:100%;
+  height:100%;
+}
+
+
+#chart-footer {
+  text-align: left;
+  padding-bottom: 10px;
+}
+
+#chart-nav {
+  margin-top: 10px;
+  padding: 15px 0 0;
+  margin: 0 10px;
+  z-index: 100;
+  position: absolute;
+  width: 950px;
+}
+
+#chart-overlays {
+  position: absolute;
+  z-index: 40;
+}
+
+.chart-overlay {
+  position: absolute;
+  display: none;
+}
+
+.chart-overlay p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.45em;
+}
+
+#chart-high-label {
+  position: absolute;
+  top: 80px;
+  left: 700px;
+  width: 60px;
+  border-top: dashed 1px rgba(0, 0, 0, 0.2);
+}
+
+#chart-high-label span {
+  position: absolute;
+  right: -105px;
+  top: -10px;
+  width: 100px;
+}  
+
+
+#chart-low-label {
+  position: absolute;
+  top: 570px;
+  left: 720px;
+  width: 60px;
+  border-top: dashed 1px rgba(0, 0, 0, 0.2);
+}
+
+#chart-low-label span {
+  position: absolute;
+  right: -105px;
+  top: -10px;
+  width: 100px;
+}
+
+.chart-key {
+  position: absolute;
+  top: 200px;
+  left: 10px;
+  width: 200px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.chart-key p {
+  margin-bottom: 8px;
+   margin-top: 42px;
+  color:#555;
+}
+
+#chart-key-size {
+  position: relative;
+  height: 150px;
+  width: 200px;
+}
+
+.chart-key-svg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+#chart-key-color {
+  position: relative;
+  height: 210px;
+  width: 200px;
+}
+
+.chart-key-color-svg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.chart-key-circle {
+  stroke-width: 0.8;
+  stroke: #555;
+  stroke-dasharray: 2 2;
+  fill: none;
+}
+
+.circle-label {
+  position: absolute;
+  border-top: dashed 1px;
+  border-color: #555;
+  opacity:0.8;
+
+  width: 40px;
+}
+
+
+.circle-label span {
+  font-size: 12px;
+  color: #555;
+  position: absolute;
+  display: block;
+  left: 45px;
+  top: -8px;
+  width: 80px;
+  z-index: 100;
+}
+
+.color-label {
+  color: #555;
+  fill: #555;
+  font-size: 10px;
+  z-index: 100;
+}
+
+#circle-label-one {
+  left: 70px;
+  top: 16px;
+  width: 50px;
+}
+
+#circle-label-two {
+  left: 64px;
+  top: 40px;
+  width: 26px;
+}
+  
+#circle-label-three {
+  left: 74px;
+  top: 75px;
+  width: 50px;
+}
+  
+
+.chart-all-overlay-annotation {
+  position: absolute;
+  width: 275px;
+  top: 80px;
+  left:10px;}
+
+.chart-annotation h5 {
+  font-size: 16px;
+  line-height: 16px;
+  margin-bottom: 7px;
+}
+
+.chart-annotation p {
+  font-size: 13px;
+}
+
+.chart-dc-overlay-annotation {
+  position: absolute;
+  left: 130px;
+  top: 90px;
+  width: 140px;
+}
+
+
+.chart-nation-overlay-annotation {
+  position: absolute;
+  left: 430px;
+  top: 90px;
+  width: 100px;
+}
+.chart-nation-overlay-annotation1 {
+  position: absolute;
+  left: 690px;
+  top: 90px;
+  width: 140px;
+}
+.chart-nation-overlay-annotation2 {
+  position: absolute;
+  left: 700px;
+  top: 290px;
+  width: 140px;
+}
+.chart-nation-overlay-annotation3 {
+  position: absolute;
+  left: 200px;
+  top: 600px;
+  width: 140px;
+}
+.chart-nation-overlay-annotation4 {
+  position: absolute;
+  left: 540px;
+  top: 600px;
+
+}
+
+.chart-rent-overlay-annotation {
+  top: 60px;
+  left: 10px;
+  width: 970px;
+  position: absolute;
+}
+
+.chart-rent-x-overlay-annotation {
+  top: 200px;
+  left: 530px;
+  width: 200px;
+  position: absolute;
+}
+
+.chart-rent-y-overlay-annotation {
+  top: 503px;
+  left: 830px;
+  width: 200px;
+  position: absolute;
+}
+
+#chart-canvas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  margin-bottom: 10px;
+  overflow:hidden;
+  top:20px;
+  left:0;
+}
+
+.tooltip {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    -moz-border-radius:3px;
+    border-radius: 3px;
+    border: 2px solid #DDD;
+    background: #fff;
+    opacity: 1;
+    color: #000;
+    padding: 10px;
+    width: 300px;
+    font-size: 11px;
+    z-index: 120;
+}
+
+.tooltip p.main {
+  font-size: 14px;
+  text-align: left;
+  line-height:120%;
+  margin:0;
+}
+
+
+.tooltip p.main1 {
+  font-size: 10px;
+  text-align: left;
+  line-height:120%;
+  margin:0;
+  text-transform:uppercase;
+}
+
+hr.tooltip-hr {
+  padding:3px 0 0 0;
+  margin:3px 0 3px 0;
+}
+ 
+.tooltip .title {
+    font-size: 23px;
+    line-height: 24px;
+
+}
+ 
+.tooltip .name {
+  font-weight:normal;
+}
+
+
+
+.axis {
+  shape-rendering: crispEdges;
+}
+
+.axis line {
+  stroke: #ddd;
+  fill: none;
+}
+
+.axis path {
+  fill: none;
+  stroke: #ddd;
+}
+
+.x.axis line {
+}
+
+.x.axis .minor {
+  stroke-opacity:0 ;
+}
+
+.x.axis path {
+  /* display: none; */
+}
+
+
+line.axis-line {
+  stroke-width: 1;
+  stroke: #999;
+  stroke-dasharray: 2 3;
+  fill:none;
+}
+

@@ -1,0 +1,61 @@
+body {
+    padding-right: 0px;
+    padding-left: 0px;
+    font-family:'Droid Sans', sans-serif;
+}
+}
+table {
+    font-size: 12px;
+    float: left;
+}
+.table th {
+    background-color:#e5ecf9;
+    color:#333;
+    height:40px;
+}
+, .table td {
+    text-align: left;
+    border-bottom: 1px dotted;
+    background-color:#fff;
+}
+.table td.hover {
+    background-color: red
+}
+.table th {
+    font-size: 14px;
+    text-align: center;
+}
+.table thead th {
+    vertical-align: middle;
+    cursor: pointer;
+}
+tr.odd {
+    background-color: #e8e8e8;
+}
+tr.even {
+    background-color: white;
+}
+tr.odd td.sorting_1 {
+    background-color: #D3D6FF;
+}
+label, input, button, select, textarea {
+    line-height: 30px
+}
+input, textarea, select, .uneditable-input {
+    height: 45px;
+    line-height: 25px;
+}
+select {
+    width: 75px
+}
+.dataTables_length {
+    padding-left: 10px
+}
+.dataTables_filter {
+    padding-right: 10px;
+    color:black;
+    font-family:'Droid Sans', sans-serif;
+    ", Arial, Verdana, sans-serif }
+.table-striped tbody>tr:nth-child(odd)>th>td.sorting_1 {
+        background-color: red
+    }
