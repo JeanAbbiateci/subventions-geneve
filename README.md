@@ -1,5 +1,9 @@
-Les subventions de la ville de Génève
+Les subventions de la ville de Genève
 ==================
+
+Toutes les subventions de la ville de Genève prévues au budget 2014 sont visualisées ici. Les prestations en nature ne sont pas prises en compte.
+
+=================
 
 Crédits code :
 
